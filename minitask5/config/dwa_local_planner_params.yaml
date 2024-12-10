@@ -1,0 +1,47 @@
+DWAPlannerROS:
+
+# Robot Configuration Parameters
+  max_vel_x: 0.5
+  min_vel_x: 0.2
+
+# The velocity when robot is moving in a straight line
+  max_vel_trans:  0.26
+  min_vel_trans:  0.13
+
+  max_vel_theta: 1.0
+  min_vel_theta: 0.9
+  min_in_place_vel_theta: 0.2  # 增加原地旋转的最小速度，避免优先选择后退
+  acc_lim_x: 2.5
+  acc_lim_theta: 3.2 
+
+# Goal Tolerance Parametes
+  xy_goal_tolerance: 0.2 #0.05
+  yaw_goal_tolerance: 0.5 #3.14 #0.17
+  latch_xy_goal_tolerance: false
+
+# Forward Simulation Parameters
+  sim_time: 2.0 #4.0 #2.0
+  vx_samples: 20
+  vth_samples: 40
+  controller_frequency: 10.0
+# From the ros navguide paper
+  sim_time: 2.0  # 增大预测时间窗口
+  sim_granularity: 0.025 # Default for turtlebot sized base
+
+# Trajectory Scoring Parameters
+
+  path_distance_bias: 32 
+  goal_distance_bias: 24
+  occdist_scale: 0.05
+
+  forward_point_distance: 0.325
+  stop_time_buffer: 0.2
+  scaling_speed: 0.25
+  max_scaling_factor: 0.2
+
+# Oscillation Prevention Parameters
+  oscillation_reset_dist: 0.05
+
+# Debugging
+  publish_traj_pc : true
+  publish_cost_grid_pc: true
