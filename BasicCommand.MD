@@ -25,20 +25,11 @@
 |---|---|
 |1|cd XXX|
 |2|git init|
-|3|git remote add origin https://projects.cs.nott.ac.uk/comp4034-ars-2024/g08.git|
+|3|git remote add origin XXXXXX
 |4|git add XXX|
 |5|git status|
 |6|git pull origin main|
 |7|git commit -m “XXXXX”|
 |8|git push origin master| 
 |||
-
-<h1>Developer Tokens</h1>
-
-|Name|ID|Tokens|
-|---|---|---|
-|Yue YAO|alyyy85|glpat-7ux3PhbjGrLJ26Zne1mJ|
-|Yinghao HE|alyyh76|glpat-_dkBs3zLKaK6XjwfZVU3|
-|Xianda XU|alyxx35|glpat-p_XcY1zAmVksscCejk8D|
-|Robot|-|Fohvegh9|
 

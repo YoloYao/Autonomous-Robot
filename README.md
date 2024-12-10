@@ -1,6 +1,13 @@
 # Autonomous-Robot
 Path planning robot based on turtlebot3
 
+```
+cd existing_repo
+git remote add origin XXXXXX
+git branch -M main
+git pull origin main
+```
+
 ## Minitask1
 Control the movement of the robot and walk out of the square path with a side length of 1 meter.
 |Step|Terminal|Commands|
@@ -55,3 +62,13 @@ Specify some target points in the map, and use move_base to control the robot to
 |2|T2|roslaunch minitask5 train_env.launch|
 |3|T3|roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=\`rospack find minitask5\`/maps/train_env.yaml|
 |4|T4|rosrun minitask5 main.py|
+
+## Connect Robot
+|Step|Terminal|Commands|
+|---|---|---|
+|1|T1|ssh team@turtlebot|
+|2|T1|password:XXXXX|
+|3|T1|cd catkin_ws|
+|4|T1|source devel/setup.bash|
+|5|T1|roslaunch turtlebot3_bringup turtlebot3_robot.launch|
+|6|T2|roslaunch realsense2_camera rs_camera.launch align_depth:=true|
